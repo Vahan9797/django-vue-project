@@ -10,9 +10,9 @@ else
 			continue
 		else
 			pip install "$arg"
-			if grep -q "$arg" $mainFile; then
-				pip freeze | grep "$arg" >> requirements.txt
-			fi
 		fi
 	done
 fi
+
+truncate -s 0 $mainFile
+pip freeze >> $mainFile
