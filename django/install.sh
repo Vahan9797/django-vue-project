@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check if no argument is passed so there is a need to install all dependencies...
 mainFile=./requirements.txt
 
